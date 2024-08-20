@@ -1,12 +1,10 @@
 import { Component, Input, inject } from '@angular/core';
-import { CardComponent } from '../../shared/card/card.component';
 import { Task } from './task-list.model';
 import { CommonModule } from '@angular/common';
 import { TasksService } from '../tasks.service';
 @Component({
   selector: 'app-task-list',
-  standalone: true,
-  imports: [CardComponent, CommonModule],
+  standalone: false,
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css',
 })

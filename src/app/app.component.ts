@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { DUMMY_USERS } from './dummy-user';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { UserComponent } from './user/user.component';
-import { TaskComponent } from './tasks/task.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, UserComponent, TaskComponent],
+  standalone: false,
+  // imports: [RouterOutlet, HeaderComponent, UserComponent, TaskComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

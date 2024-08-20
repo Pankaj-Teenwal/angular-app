@@ -5,8 +5,6 @@ import {
   Output,
   EventEmitter,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CardComponent } from '../shared/card/card.component';
 
 // interface User {
 //   id: string;
@@ -16,8 +14,7 @@ import { CardComponent } from '../shared/card/card.component';
 
 @Component({
   selector: 'app-user',
-  standalone: true,
-  imports: [CommonModule, CardComponent],
+  standalone: false,
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
